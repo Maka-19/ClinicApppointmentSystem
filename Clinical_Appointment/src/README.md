@@ -1,12 +1,12 @@
 Clinic Appointment System
-Name: IRVINE MANGUDHLA          : R2420384 
-Name : MAKANAKA MITCHELLE MASIIWA : R2420425
+Name: IRVINE MANGUDHLA            Student Number: R2420384
+Name: MAKANAKA MITCHELLE MASIIWA  Student Number: R2420425s
 
 
 Project: Clinic Appointment System Mini Project
-The Clinic Appointment System is a Java based application that allows patients to book and manage appointments with clinic staff.
+The Clinic Appointment System is a Java-based application that allows patients to book and manage appointments with clinic staff.
 
-The system demonstrates core Object Oriented Programming principles, including:
+The system demonstrates core Object-Oriented Programming principles, including:
 
 Abstraction
 Encapsulation
@@ -39,8 +39,6 @@ UML Class Diagram
 
 ```mermaid
 classDiagram
-    direction BT
-
     class Person {
         <<abstract>>
         -String name
@@ -48,15 +46,15 @@ classDiagram
         +Person(String name, int id)
         +getName() String
         +getId() int
-        +role() String*
+        +role() String
     }
     class Patient {
         +role() String
     }
     class Staff {
         <<abstract>>
-        +fee() double*
-        +bufferHours() int*
+        +fee() double
+        +bufferHours() int
     }
     class Doctor {
         +role() String
@@ -136,13 +134,13 @@ classDiagram
     Clock <|.. FixedClock
     AutoCloseable <|.. ClinicLogger
 
-    Appointment --> "1" Patient
-    Appointment --> "1" Staff
-    Appointment --> "1" AppointmentStatus
-    Clinic o-- "0..*" Appointment
-    Appointment ..> Clock : cancel()
-    Clinic ..> Person : registerPerson()
-    Clinic ..> Staff : printFees()
+    Appointment --> Patient
+    Appointment --> Staff
+    Appointment --> AppointmentStatus
+    Clinic o-- Appointment
+    Appointment ..> Clock
+    Clinic ..> Person
+    Clinic ..> Staff
 ```
 
 OOP Concepts Demonstrated
