@@ -1,8 +1,11 @@
 Clinic Appointment System
-Name: IRVINE MANGUDHLA            Student Number: R2420384
 
 
-Name: MAKANAKA MITCHELLE MASIIWA  Student Number: R2420425
+
+Name: IRVINE MANGUDHLA                    Student Number: R2420384
+
+
+Name: MAKANAKA MITCHELLE MASIIWA           Student Number: R2420425
 
 
 Project: Clinic Appointment System Mini Project
